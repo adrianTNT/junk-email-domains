@@ -69,6 +69,7 @@ if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 }
 
 ?>
+```
 
 ## modify code to cache the code from github for a few days
 
