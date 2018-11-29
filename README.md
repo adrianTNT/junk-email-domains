@@ -8,7 +8,7 @@ Currently there are over 700 domains.
 The actual list is the */raw* file: https://raw.githubusercontent.com/adrianTNT/junk-email-domains/master/raw
 
 Sample PHP code
-```
+```php
 <?php 
 $junk_email_domains_list = file_get_contents("https://raw.githubusercontent.com/adrianTNT/junk-email-domains/master/raw");
 
