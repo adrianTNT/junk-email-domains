@@ -13,13 +13,16 @@ Sample PHP code to test user email and exit if needed, not libraries or dependen
 
 $email = $_GET['email'];
 
+// get the list of bad domains from github
 $junk_email_domains_list = file_get_contents("https://raw.githubusercontent.com/adrianTNT/junk-email-domains/master/raw");
 
 // make list lowercase for better comparison
 $junk_email_domains_list = strtolower($junk_email_domains_list);
 
+// make the list into an array so we can easy search in it
 $junk_email_domains_array = explode("\n", $junk_email_domains_list);
 
+// detect email domain from the email address
 $email_domain = trim(substr($email, 1+stripos($email, "@")));
 
 // make email_domain lowercase before comparing it in our list of banned emails
@@ -29,6 +32,8 @@ if(in_array(strtolower($email_domain), $junk_email_domains_array)){
 	exit;
 	
 }
+
+// if there are no evil matches then we are here, continuing with the code
 
 ?>
 ```
