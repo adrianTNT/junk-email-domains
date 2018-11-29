@@ -52,7 +52,7 @@ if($email_domain!='' and in_array(strtolower($email_domain), $junk_email_domains
 	
 }
 
-// if there are no evil matches then we are here, continuing with the code
+// continue to user registration, send emails, etc
 
 ?>
 ```
