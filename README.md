@@ -24,7 +24,7 @@ Currently there are over 700 domains.
 ```
 The actual list is the */raw* file: https://raw.githubusercontent.com/adrianTNT/junk-email-domains/master/raw
 
-Sample PHP code to test user email and exit if needed, not libraries or dependencies to install.
+Sample PHP code to test user email and exit if needed, no libraries or dependencies to install.
 ```php
 <?php 
 
