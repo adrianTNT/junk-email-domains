@@ -30,7 +30,7 @@ The actual list is the */raw* file: https://raw.githubusercontent.com/adrianTNT/
 ```php
 <?php 
 
-$email = $_GET['email'];
+$email = $_POST['email'];
 
 // get the list of bad domains from github
 $junk_email_domains_list = file_get_contents("https://raw.githubusercontent.com/adrianTNT/junk-email-domains/master/raw");
@@ -63,7 +63,7 @@ if($email_domain!='' and in_array(strtolower($email_domain), $junk_email_domains
 ```php
 <?php
 
-$email = $_GET['email'];
+$email = $_POST['email'];
 
 if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 	echo $email." doesn't seem to be a valid email";
