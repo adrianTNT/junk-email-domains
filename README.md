@@ -24,7 +24,7 @@ Currently there are over 700 domains.
 ```
 The actual list is the */raw* file: https://raw.githubusercontent.com/adrianTNT/junk-email-domains/master/raw
 
-Sample PHP code to test user email and exit if needed, no libraries or dependencies to install.
+## Sample PHP code to test user email and exit if needed, no libraries or dependencies to install.
 ```php
 <?php 
 
@@ -56,7 +56,7 @@ if($email_domain!='' and in_array(strtolower($email_domain), $junk_email_domains
 ```
 
 
-You might also want to exit at the very start if the provided email is an invalid one
+## exit if email was invalid in the first place
 
 ```php
 <?php
@@ -69,3 +69,24 @@ if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 }
 
 ?>
+
+## modify code to cache the code from github for a few days
+
+```php
+<?php 
+// if we have a local copy of the file and it is newer than few days, use that one
+if(@filemtime("junk_email_domains.txt") > time()-60*60*24*7){
+	
+	$junk_email_domains_list = @file_get_contents("junk_email_domains.txt");
+
+} else {
+	
+	// get the list of bad domains from github
+	$junk_email_domains_list = file_get_contents("https://raw.githubusercontent.com/adrianTNT/junk-email-domains/master/raw");
+	
+	// save our local cached file
+	file_put_contents("junk_email_domains.txt", $junk_email_domains_list);
+	
+}
+?>
+```
