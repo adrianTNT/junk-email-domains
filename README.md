@@ -47,7 +47,7 @@ $email_domain = trim(substr($email, 1+stripos($email, "@")));
 // make email_domain lowercase before comparing it in our list of banned emails
 if($email_domain!='' and in_array(strtolower($email_domain), $junk_email_domains_array)){
 	
-	echo "Hello smarty-pants, you cannot emails from ".$email_domain;
+	echo "Hello smarty-pants, you cannot use emails from ".$email_domain;
 	exit;
 	
 }
