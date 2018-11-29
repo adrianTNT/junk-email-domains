@@ -4,7 +4,24 @@ These are a huge problem for mail servers, they cause too many bounces, decrease
 This list was made unique and sorted alphabetically with simple tools from http://app.tntcode.com/tools/ 
 
 Currently there are over 700 domains.
-
+```
+0-mail.com
+0815.ru
+0clickemail.com
+0wnd.net
+0wnd.org
+10minutemail.co.za
+10minutemail.com
+123-m.com
+1fsdfdsfsdf.tk
+1pad.de
+20minutemail.com
+21cn.com
+2fdgdfgdfgdf.tk
+2prong.com
+30minutemail.com
+[...]
+```
 The actual list is the */raw* file: https://raw.githubusercontent.com/adrianTNT/junk-email-domains/master/raw
 
 Sample PHP code to test user email and exit if needed, not libraries or dependencies to install.
