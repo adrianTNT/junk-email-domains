@@ -57,7 +57,7 @@ if($email_domain!='' and in_array(strtolower($email_domain), $junk_email_domains
 ```
 
 
-## Exit if email was invalid in the first place
+## Optional: exit if email was invalid in the first place
 
 ```php
 <?php
@@ -72,7 +72,7 @@ if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 ?>
 ```
 
-## Mdify code to cache the code from github for a few days
+## Optional: cache the domains list from github for a few days
 
 ```php
 <?php 
