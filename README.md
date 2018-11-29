@@ -24,7 +24,8 @@ Currently there are over 700 domains.
 ```
 The actual list is the */raw* file: https://raw.githubusercontent.com/adrianTNT/junk-email-domains/master/raw
 
-## Sample PHP code to test user email and exit if needed, no libraries or dependencies to install.
+## Sample PHP code to test if given email is a disposable one
+
 ```php
 <?php 
 
@@ -56,7 +57,7 @@ if($email_domain!='' and in_array(strtolower($email_domain), $junk_email_domains
 ```
 
 
-## exit if email was invalid in the first place
+## Exit if email was invalid in the first place
 
 ```php
 <?php
@@ -71,7 +72,7 @@ if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 ?>
 ```
 
-## modify code to cache the code from github for a few days
+## Mdify code to cache the code from github for a few days
 
 ```php
 <?php 
