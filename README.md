@@ -3,7 +3,7 @@ Should be updated with list of domains that offer disposable / junk / temporary 
 
 This list was made unique and sorted alphabetically with simple tools from http://app.tntcode.com/tools/ 
 
-The actual list in raw format is here: https://raw.githubusercontent.com/adrianTNT/junk-email-domains/master/raw
+The actual list is the */raw* file: https://raw.githubusercontent.com/adrianTNT/junk-email-domains/master/raw
 
 
 
